@@ -1,0 +1,40 @@
+/**GENERAL CSS RULES**/
+*
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: $body-font;
+  font-weight: $font-weight;
+  font-size: $body-font-size;
+  
+  h1, h2, h3, h4, h5, h6
+    {
+      font-family: $header-font;
+    }
+    
+    .row
+    {
+      margin:0;
+    }
+    
+    ul
+    {
+      list-style: none;
+      padding:0 40px;
+      
+        a, &:hover, &:focused, &:active
+        {
+          color:$white;
+          text-decoration:none;
+        }
+    }
+    
+    .hide
+    {
+      display:none;
+    }
+}
+/**/

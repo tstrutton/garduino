@@ -1,0 +1,52 @@
+/**DETAILS**/
+
+#details
+{
+  padding:0 20px;
+  max-width: 600px;
+  margin:0 auto;
+
+    .title
+    {
+      text-align:$align;
+      padding-top:50px;
+    }
+
+    .desc
+    {
+      padding-bottom:$main-pad;
+      text-align: $align;
+      padding-top:50px;
+    }
+
+    .icon
+    {
+      margin:$main-pad/2 auto;
+    }
+
+    .detailsFeatures
+    {
+      text-align:$align;
+      margin:0 auto;
+      margin-bottom: $main-pad;
+      height: 400px;
+
+      h2{
+          //font-size:24px;
+      }
+
+      .df{
+          max-width: 400px;
+          margin:0 auto;
+        }
+    }
+
+    .detailsdesc{
+      padding: 30px 50px 50px 30px;
+      text-align: center;
+
+      h1{
+        padding-bottom: 50px;
+      }
+    }
+}

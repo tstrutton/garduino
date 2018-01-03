@@ -1,0 +1,68 @@
+/**BANNER CONTENT**/
+
+.banner
+{
+  h1, p,{
+    margin-bottom:$main-pad;
+  }
+}
+
+/**BANNER HOME**/
+#bannerHome
+{
+   @include banner('leaves.png');
+
+   #download{
+    margin-bottom:$main-pad/2;
+    height:80px;
+
+    &:hover{
+      cursor: $cursor;
+    }
+
+    img{
+      max-width: 100%;
+    }
+  }
+
+  #mockup{
+    img{
+      max-width: 100%;
+      position: relative;
+      right:-30px;
+      top:0;
+    }
+  }
+}
+
+/**BANNER DETAILS**/
+
+#bannerFeature
+{
+   @include banner('details-flower.png');
+   height: 100vh;
+
+  #download{
+  margin-bottom:25px;
+  height:80px;
+
+    &:hover{
+      cursor: $cursor;
+    }
+
+    img{
+      max-width: 100%;
+    }
+  }
+}
+
+
+/**BANNER FAQ**/
+
+#bannerFAQ
+{
+   @include banner('faq-tablet.png');
+   height: 100vh;
+}
+
+

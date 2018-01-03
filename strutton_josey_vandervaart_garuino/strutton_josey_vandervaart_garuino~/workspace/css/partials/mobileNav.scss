@@ -1,0 +1,70 @@
+/**MOBILE NAVGATION**/
+#mobileNav
+{
+  height:100vh;
+  width:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: $green;
+  z-index: 3;
+  color: $white;
+  text-align: $align;
+  
+  .logo
+  {
+    padding:20px 15px;
+  }
+  
+  #menu_close_icon
+  {
+    max-height: $main-pad*2;
+    padding:40px 40px;
+    width:auto;
+    float: right;
+  }
+  
+  nav
+  {
+    clear: both;
+    padding-top:$main-pad;
+    
+    li
+    {
+      padding:20px 0;
+      border-top:1px solid $white;
+      
+      &:last-child
+      {
+        border-bottom:1px solid $white;
+      }
+    
+      a
+      {
+        color:$white;
+        font-size: $body-font-size;
+        
+        &:focused, &:active, &:visited
+        {
+          color:$white;
+          text-decoration:none;
+        }
+      }
+    }
+  }
+  
+  .social
+  {
+    height:$main-pad;
+    margin:$main-pad/2 0;
+    
+    img
+    {
+      max-height:$main-pad;
+      width:auto;
+    }
+  }
+
+}

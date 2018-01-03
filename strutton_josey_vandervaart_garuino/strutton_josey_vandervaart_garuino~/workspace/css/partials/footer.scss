@@ -1,0 +1,50 @@
+
+/**SUBSCRIBE**/
+#subscribe
+{
+    background-color:$blue;
+    padding:$main-pad 20px;
+    color:$white;
+    text-align: $align;
+  
+    span
+    {
+      font-size: $body-font-size;
+    }
+    
+    input, button
+    {
+      padding:20px;
+      color:$black;
+      background-color: $white;
+      border:none;
+      margin-top:$main-pad;
+      text-align: $align;
+      font-size: $body-font-size;
+    }
+    
+    /**FOOTER**/
+
+    footer
+    {
+      margin:0;
+      padding:$main-pad 20px 0 20px;
+      color:$white;
+  
+        img
+        {
+          margin:$main-pad/2 auto;
+          height: $main-pad/1.5;
+          width: $main-pad/1.5;
+          float:right;
+        }
+        
+        #copyright
+        {
+          text-align: $align;
+          font-size: 14px;
+          padding:$main-pad 0 10px 0;
+        }
+    }
+}
+

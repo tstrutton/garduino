@@ -1,0 +1,382 @@
+/**GENERAL CSS RULES**/
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 20px; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: "Open Sans", sans-serif; }
+  body .row {
+    margin: 0; }
+  body ul {
+    list-style: none;
+    padding: 0 40px; }
+    body ul a, body ul:hover, body ul:focused, body ul:active {
+      color: #ffffff;
+      text-decoration: none; }
+  body .hide {
+    display: none; }
+
+/**/
+/**BANNER CONTENT**/
+.banner h1, .banner p {
+  margin-bottom: 50px; }
+
+/**BANNER HOME**/
+#bannerHome {
+  color: white;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/leaves.png);
+  background: -moz-linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/leaves.png);
+  background: -o-linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/leaves.png);
+  background: linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/leaves.png);
+  background-size: cover; }
+  #bannerHome #download {
+    margin-bottom: 25px;
+    height: 80px; }
+    #bannerHome #download:hover {
+      cursor: pointer; }
+    #bannerHome #download img {
+      max-width: 100%; }
+  #bannerHome #mockup img {
+    max-width: 100%;
+    position: relative;
+    right: -30px;
+    top: 0; }
+
+/**BANNER DETAILS**/
+#bannerFeature {
+  color: white;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/details-flower.png);
+  background: -moz-linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/details-flower.png);
+  background: -o-linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/details-flower.png);
+  background: linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/details-flower.png);
+  background-size: cover;
+  height: 100vh; }
+  #bannerFeature #download {
+    margin-bottom: 25px;
+    height: 80px; }
+    #bannerFeature #download:hover {
+      cursor: pointer; }
+    #bannerFeature #download img {
+      max-width: 100%; }
+
+/**BANNER FAQ**/
+#bannerFAQ {
+  color: white;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/faq-tablet.png);
+  background: -moz-linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/faq-tablet.png);
+  background: -o-linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/faq-tablet.png);
+  background: linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/faq-tablet.png);
+  background-size: cover;
+  height: 100vh; }
+
+/**HEADER**/
+header {
+  height: 100px;
+  margin-bottom: 50px;
+  /**DESKTOP NAV**/ }
+  header .logo {
+    max-height: 100px;
+    padding: 20px 0px;
+    width: auto; }
+  header #menu_icon {
+    max-height: 100px;
+    width: auto;
+    padding: 41px 20px;
+    float: right; }
+  header #mainNav {
+    height: 100px;
+    padding: 30px 20px 0 0; }
+    header #mainNav ul {
+      width: 350px;
+      float: right;
+      padding: 0; }
+    header #mainNav li {
+      display: inline-block;
+      margin: 10px 20px;
+      padding: 0 10px 0px 10px;
+      border-bottom: 0px solid rgba(255, 255, 255, 0);
+      transition: all 0.3s ease; }
+      header #mainNav li:hover {
+        border-bottom: 1px solid white;
+        padding-bottom: 10px; }
+    header #mainNav a {
+      color: #ffffff; }
+      header #mainNav a:hover {
+        color: #ffffff;
+        text-decoration: none; }
+
+/**MOBILE NAVGATION**/
+#mobileNav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00C581;
+  z-index: 3;
+  color: #ffffff;
+  text-align: center; }
+  #mobileNav .logo {
+    padding: 20px 15px; }
+  #mobileNav #menu_close_icon {
+    max-height: 100px;
+    padding: 40px 40px;
+    width: auto;
+    float: right; }
+  #mobileNav nav {
+    clear: both;
+    padding-top: 50px; }
+    #mobileNav nav li {
+      padding: 20px 0;
+      border-top: 1px solid #ffffff; }
+      #mobileNav nav li:last-child {
+        border-bottom: 1px solid #ffffff; }
+      #mobileNav nav li a {
+        color: #ffffff;
+        font-size: 20px; }
+        #mobileNav nav li a:focused, #mobileNav nav li a:active, #mobileNav nav li a:visited {
+          color: #ffffff;
+          text-decoration: none; }
+  #mobileNav .social {
+    height: 50px;
+    margin: 25px 0; }
+    #mobileNav .social img {
+      max-height: 50px;
+      width: auto; }
+
+/**HOW IT WORKS**/
+#howitworks {
+  padding: 0 20px;
+  max-width: 600px;
+  margin: 0 auto; }
+  #howitworks .title {
+    text-align: center;
+    padding-top: 50px; }
+  #howitworks .desc {
+    padding-bottom: 50px;
+    text-align: center;
+    padding-top: 50px; }
+  #howitworks .icon {
+    margin: 25px auto; }
+  #howitworks .homeFeatures {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px; }
+    #howitworks .homeFeatures h2 {
+      font-size: 24; }
+    #howitworks .homeFeatures .hf {
+      max-width: 300px;
+      margin: 0 auto; }
+
+/**DETAILS**/
+#details {
+  padding: 0 20px;
+  max-width: 600px;
+  margin: 0 auto; }
+  #details .title {
+    text-align: center;
+    padding-top: 50px; }
+  #details .desc {
+    padding-bottom: 50px;
+    text-align: center;
+    padding-top: 50px; }
+  #details .icon {
+    margin: 25px auto; }
+  #details .detailsFeatures {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    height: 400px; }
+    #details .detailsFeatures .df {
+      max-width: 400px;
+      margin: 0 auto; }
+  #details .detailsdesc {
+    padding: 30px 50px 50px 30px;
+    text-align: center; }
+    #details .detailsdesc h1 {
+      padding-bottom: 50px; }
+
+#faq {
+  margin: 0 auto;
+  padding: 0 20px; }
+  #faq h1 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  #faq ul {
+    margin-bottom: 95px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; }
+  #faq ul li {
+    font-size: 24px;
+    color: rgba(0, 162, 182, 0.65);
+    list-style: initial;
+    /*padding-bottom: $main-pad;*/
+    cursor: pointer;
+    padding: 0; }
+  #faq .question {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+    list-style: initial;
+    cursor: pointer; }
+  #faq .answers {
+    font-size: 17px;
+    height: 0px;
+    overflow: hidden;
+    transition: .3s ease-out;
+    opacity: 0;
+    padding-bottom: 20px;
+    color: black; }
+  #faq .show {
+    /*display: inline;*/
+    transition: .3s ease-in;
+    height: 100px;
+    opacity: 1;
+    margin-top: 25px;
+    margin-bottom: 25px; }
+
+/**SUBSCRIBE**/
+#subscribe {
+  background-color: #00A2B6;
+  padding: 50px 20px;
+  color: #ffffff;
+  text-align: center;
+  /**FOOTER**/ }
+  #subscribe span {
+    font-size: 20px; }
+  #subscribe input, #subscribe button {
+    padding: 20px;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px; }
+  #subscribe footer {
+    margin: 0;
+    padding: 50px 20px 0 20px;
+    color: #ffffff; }
+    #subscribe footer img {
+      margin: 25px auto;
+      height: 33.33333px;
+      width: 33.33333px;
+      float: right; }
+    #subscribe footer #copyright {
+      text-align: center;
+      font-size: 14px;
+      padding: 50px 0 10px 0; }
+
+/**MEDIA QUERIES**/
+@media screen and (min-width: 768px) {
+  #faq ul {
+    padding-right: 40px; }
+  #faq .show {
+    height: 45px; }
+
+  #bannerFAQ {
+    color: white;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: -webkit-linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/faq-tablet.png);
+    background: -moz-linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/faq-tablet.png);
+    background: -o-linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/faq-tablet.png);
+    background: linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/faq-tablet.png);
+    background-size: cover;
+    height: 100vh;
+    background-size: cover; }
+
+  /**BANNER**/
+  .bannerText {
+    padding: 0 100px; }
+    .bannerText h1 {
+      margin-top: 100px; }
+    .bannerText p {
+      font-size: 24px;
+      margin: 50px 0; }
+    .bannerText #download {
+      width: 75%;
+      margin: 50px 0; }
+
+  /**HOW IT WORKS**/
+  #howitworks {
+    max-width: 1200px; }
+
+  /**DETAILS**/
+  #details {
+    max-width: 1200px; }
+    #details .detailssection {
+      border-right: 1px solid #00A2B6;
+      margin-bottom: 100px; }
+    #details .detailsdesc {
+      padding: 50px 70px 50px 70px;
+      text-align: center; }
+    #details .detailsFeatures {
+      text-align: left; }
+    #details .textright {
+      text-align: right; }
+      #details .textright img {
+        float: right; }
+      #details .textright h2 {
+        padding-top: 20px;
+        align-text: right; }
+      #details .textright h2, #details .textright p {
+        clear: both; }
+
+  /**FOOTER & SUBSCRIBE**/
+  #subscribe footer .social {
+    float: right; }
+  #subscribe footer #copyright {
+    text-align: left; }
+  #subscribe button {
+    margin-left: 10px; }
+  #subscribe input {
+    margin-right: 10px; } }
+@media screen and (min-width: 1024px) {
+  #faq span {
+    font-size: 22px; }
+  #faq .answer {
+    font-size: 19px; } }
+@media screen and (min-width: 1200px) {
+  #faq .show {
+    height: 50px; }
+
+  #bannerFAQ {
+    color: white;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: -webkit-linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/flower-faq.png);
+    background: -moz-linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/flower-faq.png);
+    background: -o-linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/flower-faq.png);
+    background: linear-gradient(135deg, rgba(0, 197, 129, 0.65), rgba(0, 162, 182, 0.65)), url(../images/flower-faq.png);
+    background-size: cover;
+    height: 100vh;
+    background-size: cover; }
+
+  /**BANNER**/
+  .bannerText {
+    padding: 0 0 0 100px; }
+    .bannerText p {
+      font-size: 24px; }
+
+  #mockup img {
+    /*max-width: 75%;*/
+    float: right; } }
+
+/*# sourceMappingURL=main.css.map */
