@@ -1,0 +1,126 @@
+.splash 
+{
+	color: #FFFFFF;
+  	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0; left: 0; right: 0;
+	height:100%;
+	width: 100%;
+	background-image: url("../images/bg.png");
+	background-size: 100% 100%;
+	background-color: #CCCCCC;
+}
+
+#content 
+{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	height:100%;
+}
+
+#logo 
+{ 
+  float: left;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 300px;
+}
+
+#signin 
+{
+	padding-top: 240px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	margin-top: 50px;
+}
+
+footer 
+{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-size: 14px;
+	position:fixed;
+    bottom:0;
+    left:50%;
+    margin-left:-200px; /*negative half the width */
+    width:400px;
+    margin-bottom: 30px;
+}
+
+a 
+{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.col2 
+{
+	border-left: 2px solid white;
+	padding-right: 0px;
+	right: 0;	
+}
+
+input 
+{
+	background-color: transparent;
+	border:none;
+	border-bottom:1px solid white;
+	height: 60px;
+}
+
+input[placeholder] /*can also use ::placeholder*/ 
+{
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 25px;
+	color: #FFFFFF;
+	margin-bottom: 22px;
+}
+
+input[type='submit'] 
+{
+	border:none;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+	background-color: #000000;
+	width: 230px;
+	background:rgba(0,0,0,0.4);
+	border-radius: 30px;
+	cursor: pointer;
+	opacity: 0.7;
+	height: 35px;
+}
+
+/*TABLET*/
+
+@media screen and (min-width: 768px) {
+	.splash 
+	{
+		background-image: url("../images/tabletbg.png");
+	}
+
+	.col2
+	{
+		border-left: none;
+		padding-right: 0px;
+		right: 0;
+		padding-top: 30px;
+	}
+
+/*DESKTOP*/
+
+@media screen and (min-width: 1024px) 
+	{
+		.splash {
+		background-color: #000000;
+		background-image: url("../images/desktopbg.png");
+	}
