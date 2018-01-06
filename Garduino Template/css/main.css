@@ -59,7 +59,7 @@ body p{
 }
 
 .planthealthbad{
-	color: #ff6961;
+	color: #AA1A32;
 	margin-top: 33px;
 }
 
@@ -276,6 +276,13 @@ input[type='submit']
 	color: #FFFFFF;
 	width: 100%;
 	margin: 0 auto;
+}
+
+.linestyle2 {
+	color: #FFFFFF;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 70px;
 }
 
 .sliderDiv 
