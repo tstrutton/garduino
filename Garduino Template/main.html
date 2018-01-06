@@ -2,51 +2,180 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>The best damn Garduino there ever was.</title>
+<title>EarthScope</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/main.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
 </head>
 
 <body>
 
-<div class="container">
+<!--PLANTS-->
+
+<section id="yourplants">
+
+<img src="images/black_logo.png" id="logomain"><br>
+
+
+<h1>YOUR PLANTS</h1>
+<br>
 <div class="row">
 
+		<div class="col-xs-6 col-sm-4 col-lg-3">
+			<div class="plants" id="plantbutton">
+				<p class="plant">TAMADA</p><br>
+				<img src="images/Tomato.png">
+				<p class="planthealthgood">HEALTHY</p>
+			</div>
+		</div>
+
+		<div class="col-xs-6 col-sm-4 col-lg-3">
+			<div class="plants">
+				<p class="plant">CARROT-TOP</p><br>
+				<img src="images/Carrot.png">
+				<p class="planthealthbad">NEEDS ATTENTION!</p>
+			</div>
+		</div>
+
+		<div class="col-xs-6 col-sm-4 col-lg-3">
+			<div class="plants">
+				<p class="plant">PEPPA</p><br>
+				<img src="images/Pepper.png">
+				<p class="planthealthgood">HEALTHY</p>
+			</div>
+		</div>
+
+		<div class="col-xs-6 col-sm-4 col-lg-3">
+			<div class="plants">
+				<p class="plant">ANNYONG</p><br>
+				<img src="images/Onion.png">
+				<p class="planthealthgood">HEALTHY</p>
+			</div>
+		</div>
+
+		<div class="col-xs-6 col-sm-4 col-lg-3">
+		<div class="plants">
+				<p class="plant">SPROUTY</p><br>
+				<img src="images/Onion.png">
+				<p class="planthealthgood">HEALTHY</p>
+			</div>
+		</div>
+
+		<div class="col-xs-6 col-sm-4 col-lg-3">
+		<div class="plants">
+				<p class="addplant">ADD A PLANT</p><br>
+				<img src="images/plus.png">
+			</div>
+		</div>
+
+	</div>
+	</section>
+
+
+
+
+
+
+
+<!--DIAGNOSTICS-->
+
+	<section id="diagnostics">
+
+<h1>DIAGNOSTICS</h1> <br>
+
+<h2 class="currentplant">CURRENT PLANT:</h2>
+
+
+	<div class="menuoptions">
+	  <select>
+		    <option value="tamada">Tamada</option>
+		    <option value="carrot-top">Carrot-Top</option>
+		    <option value="peppa">Peppa</option>
+		    <option value="annyong">Annyong</option>
+		    <option value="sprouty">Sprouty</option>
+	  </select>
+	</div>
+
+
+	<div class="row">
+
+		<div class="col-xs-12 col-sm-12">
+			<div class="graph">LIGHT LEVELS</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-6">
+			<div class="graph">SOIL HUMIDITY</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-6">
+			<div class="graph">TEMPERATURE</div>
+		</div>  
+
+	</div>
+
+	</section>
+	
+
+
+<!--SCHEDULING-->
+
+<section id="scheduling">
+
+<h1>SCHEDULING - WATERING SYSTEM</h1>
+
+	<div class="row">
+
+		<div class="col-xs-12">
+			<div class="time">DAILY REPEAT<br><br>
+
+			<div>
+			  <p class="timer">7:30AM</p>
+				  <label class="sliderDiv">
+				    <input type="checkbox">
+				    <span class="slider"></span>
+				  </label>
+			  <hr class="linestyle">
+			</div>
+
+			<div>
+				  <p class="timer">8:20PM</p>
+				  	<label class="sliderDiv">
+				    <input type="checkbox">
+				    <span class="slider"></span>
+			  </label>
+			</div>
+
+			<div>
+				<hr class="linestyle">
+					<p class="add">+</p>
+				</div>
+			</div>
+
+
+<hr class="linestyle">
+
+
 	<div class="col-xs-12">
-	<div class="box">Banner Area</div>
+		<div class="time">ONE-TIME WATERING<br><br>
+
+		<div>
+ 		 <p class="timer">DEC 26</p>
+ 			 <p class="timer">- 8:20PM</p>
+  				<label class="sliderDiv">
+   				<input type="checkbox">
+   				<span class="slider"></span>
+ 			</label>
+		</div>
+				<hr class="linestyle">
+			<p class="add">+</p>
+		</div>
+		</div>
 	</div>
 
-	<div class="col-xs-12 col-sm-6 col-lg-4">
-		<div class="box">Title</div>
-	</div>
+	</section>
 
-	<div class="col-xs-12 col-sm-6 col-lg-4">
-		<div class="box">Title</div>
-	</div>
-
-	<div class="col-xs-12 col-sm-6 col-lg-4">
-		<div class="box">Title</div>
-	</div>
-
-	<div class="col-xs-12 col-sm-6 col-lg-4">
-		<div class="box">Title</div>
-	</div>
-
-	<div class="col-xs-12 col-sm-6 col-lg-4">
-		<div class="box">Title</div>
-	</div>
-
-	<div class="col-xs-12 col-sm-6 col-lg-4">
-		<div class="box">Title</div>
-	</div>
-
-	<div class="col-xs-12">
-	<div class="box">Timer Area</div>
-	</div>
-
-	</div>
-</div>
-
+<script src="js/main.js"></script>
 </body>
 </html>
