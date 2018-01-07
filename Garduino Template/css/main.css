@@ -47,6 +47,13 @@ body p{
 	padding-top: 10px;
 }
 
+
+
+.plantClick {
+	border: 5px solid #078250;
+	padding-top: 0px;
+}
+
 .addplant {
 	padding-top: 10px;
 	margin-bottom: 15px;
@@ -69,6 +76,7 @@ body p{
 }
 
 .currentplant {
+	display: inline-block;
 	margin-left: 18px;
 }
 
@@ -130,6 +138,20 @@ body p{
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	display: inline-block;
+	font-size: 50px;
+}
+
+.am {
+	font-size: 24px;
+}
+
+.mainTitles {
+	font-family: 'Open Sans Light', sans-serif;
+	font-size: 40px;
+	margin-left: 50px;
+	margin-top: 80px;
+	padding-top: 40px;
+	margin-bottom: 0;
 }
 
 h1 {
@@ -156,11 +178,12 @@ h2 {
 	color: #ffffff;
 	margin-left: 70px;
 	margin-right: 70px;
+	font-size: 30px;
 }
 
 #scheduling {
 	background-color: #00A2B6;
-	height: 800px;
+	/*height: 800px;*/
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 70px;
 	color: #ffffff;
@@ -225,8 +248,10 @@ input
 {
 	background-color: transparent;
 	border:none;
-	border-bottom:1px solid white;
+	border-bottom:1px solid #707070;
 	height: 60px;
+	width:30%;
+	min-width: 325px;
 }
 
 input[placeholder] /*can also use ::placeholder*/ 
@@ -234,8 +259,24 @@ input[placeholder] /*can also use ::placeholder*/
 	text-align: center;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 25px;
-	color: #FFFFFF;
+	color: white;
 	margin-bottom: 22px;
+}
+
+input::-webkit-input-placeholder {
+color: white;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: white;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: white;  
+}
+ 
+input:-ms-input-placeholder {  
+color: white;  
 }
 
 input[type='submit'] 
@@ -254,6 +295,10 @@ input[type='submit']
 	height: 35px;
 }
 
+option {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
 .menuoptions {
     border: 1px solid #00A2B6;
     color: #00A2B6;
@@ -262,6 +307,8 @@ input[type='submit']
     overflow: hidden;
     margin-left: 50px;
     display: inline-block;
+    position: relative;
+    top: 10px;
 }
 
 .menuoptions select {
@@ -292,6 +339,7 @@ input[type='submit']
   width: 60px;
   height: 30px;
   float:right;
+  margin-top: 60px;
 }
 
 /* Hide default HTML checkbox */
