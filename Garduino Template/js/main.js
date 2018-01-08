@@ -5,6 +5,8 @@
 
 	var plants = document.querySelectorAll(".plants");
 	var waterAdd = document.querySelectorAll(".add");
+	var dogs = document.querySelectorAll(".dog");
+	var option = document.querySelector("#mySelect");
 
 	for (var i = 0; i < plants.length; i++) {
 			plants[i].addEventListener("click", changeOption, false);
@@ -14,6 +16,8 @@
 		waterAdd[i].addEventListener("click", timer, false);
 	}	
 
+	option.addEventListener("change", changeTop, false);
+
 	function timer(e) {
 		var div = document.createElement("div"); 
 		var divtest = document.querySelector(".addTime");
@@ -21,7 +25,8 @@
 		if(divtest) {
 			console.log("nothing");
 		}else{
-			e.path[2].appendChild(div).classList.add("addTime");
+			e.path[3].appendChild(div).classList.add("addTime");
+			document.querySelector(".addTime").innerHTML = "<p class='numSet'>00</p><p class='numSet'>00</p><p id='amSet'>am</p>"
 		}
 	}
 
@@ -33,7 +38,10 @@
 
 			for (var p = 0; p < plants.length; p++){
 				plants[p].classList.remove("plantClick"); //Loop through and remove any existing visual indicators
-				plants[p].removeAttribute("selected"); //Remove any existing selections
+			}
+
+			for (var d = 0; d < dogs.length; d++){
+				dogs[d].removeAttribute("selected"); //Remove any existing selections
 			}
 
 			document.querySelector("#"+e.currentTarget.id+"Click").setAttribute("selected", "selected"); //Make a new selection
@@ -46,4 +54,13 @@
 		}
 	}
 
+	function changeTop(e) {
+		var change = document.querySelector("#"+e.currentTarget.value);
+
+			for (var p = 0; p < plants.length; p++){
+				plants[p].classList.remove("plantClick"); //Loop through and remove any existing visual indicators
+			}
+			
+		change.classList.add("plantClick");
+	}
 }());

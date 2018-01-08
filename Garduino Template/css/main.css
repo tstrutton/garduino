@@ -62,13 +62,14 @@ body p{
 
 .planthealthgood{
 	color: #00A2B6;
-	bottom: 0;
-	padding-bottom: 10px;
+	position: relative;
+	bottom: 13px;
 }
 
 .planthealthbad{
 	color: #AA1A32;
-	margin-top: 33px;
+	position: relative;
+	bottom: -4px;
 }
 
 .add {
@@ -79,19 +80,19 @@ body p{
 
 .currentplant {
 	display: inline-block;
-	margin-left: 18px;
+	margin-left: 5%;
+	font-size: 18px;
 }
 
 .plants {
 	background:rgba(112,112,112,0.25);
 	margin-bottom: 10px;
-/*	margin-left: 5px;
-	margin-right: 5px; */
+	box-sizing: border-box;
 	width: 170px;
 	height: 170px;
 	text-align: center;
-	/*margin-top: 50px;*/
 	font-family: 'Open Sans', sans-serif;
+	transition: border .25s ease;
 }
 
 p.plant {
@@ -110,7 +111,7 @@ p.addplant {
 #yourplants {
 	background-color: #634CA2;
 	margin-bottom: 10px;
-	height:100vh;
+	height:100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -139,7 +140,7 @@ p.addplant {
 
 #diagnostics {
 	background-color: #FFFFFF;
-	height:100vh;
+	height:100%;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
 	padding: 0;
@@ -150,6 +151,8 @@ p.addplant {
 	padding-bottom: 0px;
 	display: inline-block;
 	font-size: 50px;
+	width: 20%;
+	float: left;
 }
 
 .am {
@@ -159,10 +162,11 @@ p.addplant {
 .mainTitles {
 	font-family: 'Open Sans Light', sans-serif;
 	font-size: 22px;
-	margin-left: 50px;
-	margin-top: 80px;
+	margin-left: 5%;
+	margin-top: 0;
 	padding-top: 40px;
 	margin-bottom: 0;
+	clear: both;
 }
 
 h1 {
@@ -182,29 +186,51 @@ h2 {
 	margin-top: 0px;
 }
 
+.numSet, #amSet {
+	color: #00A2B6;
+	width: 25%;
+	display: inline-block;
+	margin: 5px 1px;
+	padding: 0 1px;
+	border: 3px #00A2B6 solid;
+	text-align: center;
+}
+
+.numSet {
+	font-size: 75px;
+}
+
+#amSet {
+	font-size: 34px;
+	position: relative;
+	top: 11px;
+}
+
 .addTime {
 	background-color: white;
-	height: 200px;
-	width: 300px;
-	position: relative;
-	bottom: 50px;
+	width: 350px;
+	margin: 0 auto;
 }
 
 .time {
 	margin-bottom: 10px;
 	font-family: 'Open Sans', sans-serif;
-	margin-top: 50px;
+	margin-top: 0;
 	color: #ffffff;
-	margin-left: 70px;
-	margin-right: 70px;
+	margin-left: 5%;
+	margin-right: 5%;
 	font-size: 22px;
+}
+
+.date {
+	font-size: 18px;
 }
 
 #scheduling {
 	background-color: #00A2B6;
 	/*height: 800px;*/
 	font-family: 'Open Sans', sans-serif;
-	margin-top: 70px;
+/*	padding-top: 20px;*/
 	color: #ffffff;
 }
 
@@ -220,7 +246,7 @@ h2 {
 #logomain
 { 
   float: left;
-  display: inline-block;
+  display: block;
   margin-left: 30px;
   margin-top: 30px;
   width: 300px;
@@ -321,10 +347,10 @@ option {
 .menuoptions {
     border: 1px solid #00A2B6;
     color: #00A2B6;
-    width: 120px;
+    width: 200px;
     border-radius: 1px;
     overflow: hidden;
-    margin-left: 50px;
+    margin-left: 3%;
     display: inline-block;
     position: relative;
     top: 10px;
@@ -336,6 +362,9 @@ option {
     border: none;
     box-shadow: none;
     background: transparent;
+    font-size: 18px;
+    color: #00A2B6;
+    text-transform: uppercase;
 }
 
 .linestyle {
@@ -349,16 +378,16 @@ option {
 	width: 100%;
 	margin: 0 auto;
 	margin-top: 70px;
+	margin-bottom: 30px;
 }
 
 .sliderDiv 
 {
   position: relative;
-  display: inline-block;
   width: 60px;
   height: 30px;
   float:right;
-  margin-top: 60px;
+  top: 65px;
 }
 
 /* Hide default HTML checkbox */
@@ -434,6 +463,28 @@ input:checked + .slider:before
 		width: 554px;
 	}
 
+	#yourplants {
+		height: 100vh;
+	}
+
+	.row {
+		margin-top: 12vh;
+	}
+
+	#diagnostics {
+		height: 100vh;
+	}
+
+	.menuoptions select {
+		font-size: 27px;
+	}
+
+	.currentplant {
+		font-size: 27px;
+	}
+
+}
+
 /*DESKTOP*/
 
 @media screen and (min-width: 1024px) 
@@ -446,7 +497,7 @@ input:checked + .slider:before
 		background-color: #000000;
 		background-image: url("../images/desktopbg.png");
 		}
-
+	
 	}
 
 @media screen and (min-width: 1200px) {
