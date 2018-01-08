@@ -7,8 +7,9 @@
 	top: 0; left: 0; right: 0;
 	height:100%;
 	width: 100%;
+	min-width: 380px;
 	background-image: url("../images/bg.png");
-	background-size: 100% 100%;
+	background-size: cover;
 	background-color: #CCCCCC;
 }
 
@@ -73,6 +74,7 @@ body p{
 .add {
 	font-size: 40px;
 	margin-top: 0px;
+	cursor: pointer;
 }
 
 .currentplant {
@@ -82,19 +84,33 @@ body p{
 
 .plants {
 	background:rgba(112,112,112,0.25);
-	margin: 0 auto;
 	margin-bottom: 10px;
-	width: 178px;
-	height: 178px;
+/*	margin-left: 5px;
+	margin-right: 5px; */
+	width: 170px;
+	height: 170px;
 	text-align: center;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	font-family: 'Open Sans', sans-serif;
+}
+
+p.plant {
+	margin-top: 0;
+}
+
+p.addplant {
+	margin-top: 0;
+}
+
+.smaller {
+	width: 375px;
+	margin: 0 auto;
 }
 
 #yourplants {
 	background-color: #634CA2;
 	margin-bottom: 10px;
-	height:100%;
+	height:100vh;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -103,7 +119,6 @@ body p{
 	background-image: url("../images/mainbg.png");
 	background-size: 100% 100%;
 	font-family: 'Open Sans', sans-serif;
-	padding-bottom: 200px;
 
 }
 
@@ -124,14 +139,10 @@ body p{
 
 #diagnostics {
 	background-color: #FFFFFF;
-	margin-bottom: 10px;
-	height:100%;
-	width: 100%;
-	margin-top: 70px;
+	height:100vh;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 50px;
 }
 
 .timer {
@@ -147,7 +158,7 @@ body p{
 
 .mainTitles {
 	font-family: 'Open Sans Light', sans-serif;
-	font-size: 40px;
+	font-size: 22px;
 	margin-left: 50px;
 	margin-top: 80px;
 	padding-top: 40px;
@@ -171,6 +182,14 @@ h2 {
 	margin-top: 0px;
 }
 
+.addTime {
+	background-color: white;
+	height: 200px;
+	width: 300px;
+	position: relative;
+	bottom: 50px;
+}
+
 .time {
 	margin-bottom: 10px;
 	font-family: 'Open Sans', sans-serif;
@@ -178,7 +197,7 @@ h2 {
 	color: #ffffff;
 	margin-left: 70px;
 	margin-right: 70px;
-	font-size: 30px;
+	font-size: 22px;
 }
 
 #scheduling {
@@ -407,11 +426,31 @@ input:checked + .slider:before
 		padding-top: 30px;
 	}
 
+	.mainTitles {
+		font-size: 40px;
+	}	
+
+	.smaller {
+		width: 554px;
+	}
+
 /*DESKTOP*/
 
 @media screen and (min-width: 1024px) 
 	{
+		.time {
+		font-size: 30px;
+		}
+
 		.splash {
 		background-color: #000000;
 		background-image: url("../images/desktopbg.png");
+		}
+
 	}
+
+@media screen and (min-width: 1200px) {
+		.smaller {
+		width: 1050px; 
+		}
+}

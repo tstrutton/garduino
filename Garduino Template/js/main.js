@@ -4,10 +4,26 @@
 	console.log("SEAF has fired");
 
 	var plants = document.querySelectorAll(".plants");
+	var waterAdd = document.querySelectorAll(".add");
 
 	for (var i = 0; i < plants.length; i++) {
 			plants[i].addEventListener("click", changeOption, false);
 		}	
+
+	for (var i = 0; i < waterAdd.length; i++) {
+		waterAdd[i].addEventListener("click", timer, false);
+	}	
+
+	function timer(e) {
+		var div = document.createElement("div"); 
+		var divtest = document.querySelector(".addTime");
+
+		if(divtest) {
+			console.log("nothing");
+		}else{
+			e.path[2].appendChild(div).classList.add("addTime");
+		}
+	}
 
 	function changeOption(e) {	
 		var selectedPlant = document.querySelector("[selected=selected]");
