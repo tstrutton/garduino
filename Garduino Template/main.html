@@ -1,56 +1,58 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>EarthScope</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
-<link href="css/main.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+	<meta charset="UTF-8">
+	<title>EarthScope</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
 </head>
 
 <body>
 
 <!--PLANTS-->
 
+<h1 class="hidden">Document Body</h1>
 <section id="yourplants">
-
-<img src="images/black_logo.png" id="logomain"><br>
-
-
-<h1 class="mainTitles">YOUR PLANTS</h1>
-<br>
-
-<div class="row smaller">
-		<div class="col-xs-6 col-sm-4 col-lg-2 cat">
-			<div class="plants" id="tamada">
+	<img src="images/black_logo.png" id="logomain" alt="EarthScope Logo"><br>
+	<h1 class="mainTitles">YOUR PLANTS</h1>
+	<br>
+	<div class="row smaller">
+		<div id="alert">
+			<h3 id="alertText">Plant Name Required</h3>
+		</div>
+	</div>
+	<div class="row smaller" id="new">
+		<div class="col-xs-6 col-sm-4 col-lg-2">
+			<div class="plants plantClick" id="tamada">
 				<p class="plant">TAMADA</p><br>
-				<img src="images/Tomato.png">
+				<img class="plantImg" src="images/Tomato.png" alt="Tomato">
 				<p class="planthealthgood">HEALTHY</p>
 			</div>
 		</div>
 
-		<div class="col-xs-6 col-sm-4 col-lg-2 cat">
+		<div class="col-xs-6 col-sm-4 col-lg-2">
 			<div class="plants" id="carrot-top">
 				<p class="plant">CARROT-TOP</p><br>
-				<img src="images/Carrot.png">
+				<img class="plantImg" src="images/Carrot.png" alt="Carrot">
 				<p class="planthealthbad">NEEDS ATTENTION!</p>
 			</div>
 		</div>
 
-		<div class="col-xs-6 col-sm-4 col-lg-2 cat">
+		<div class="col-xs-6 col-sm-4 col-lg-2">
 			<div class="plants" id="peppa">
 				<p class="plant">PEPPA</p><br>
-				<img src="images/Pepper.png">
+				<img class="plantImg" src="images/Pepper.png" alt="Pepper">
 				<p class="planthealthgood">HEALTHY</p>
 			</div>
 		</div>
 
-		<div class="col-xs-6 col-sm-4 col-lg-2 cat">
+		<div class="col-xs-6 col-sm-4 col-lg-2">
 			<div class="plants" id="annyong">
 				<p class="plant">ANNYONG</p><br>
-				<img src="images/Onion.png">
+				<img class="plantImg" src="images/Onion.png" alt="Onion">
 				<p class="planthealthgood">HEALTHY</p>
 			</div>
 		</div>
@@ -58,43 +60,34 @@
 		<div class="col-xs-6 col-sm-4 col-lg-2">
 		<div class="plants" id="sprouty">
 				<p class="plant">SPROUTY</p><br>
-				<img src="images/Onion.png">
+				<img class="plantImg" src="images/Onion.png" alt="Onion">
 				<p class="planthealthgood">HEALTHY</p>
 			</div>
 		</div>
 
-		<div class="col-xs-6 col-sm-4 col-lg-2 cat">
-		<div class="plants">
+
+		<div class="col-xs-6 col-sm-4 col-lg-2">
+		<div class="ADDplants" id="adder">
 				<p class="addplant">ADD A PLANT</p><br>
-				<img src="images/plus.png">
+				<img src="images/plus.png" alt="Add">
 			</div>
 		</div>
-
-</div>
+	</div>
 </section>
-
-
-
-
-
-
 
 <!--DIAGNOSTICS-->
 
 <section id="diagnostics">
-
-<h1 class="mainTitles">DIAGNOSTICS</h1> <br>
-
-<h2 class="currentplant">CURRENT PLANT:</h2>
-
+	<h1 class="mainTitles">DIAGNOSTICS</h1> <br>
+	<h2 class="currentplant">CURRENT PLANT:</h2>
 
 	<div class="menuoptions">
 	  <select id="mySelect">
 		    <option class="dog" id="tamadaClick" value="tamada" selected="selected">Tamada</option>
-		    <option class="dog" id="carrot-topClick" value="carrot-top">Carrot-Top</option>
 		    <option class="dog" id="peppaClick" value="peppa">Peppa</option>
 		    <option class="dog" id="annyongClick" value="annyong">Annyong</option>
 		    <option class="dog" id="sproutyClick" value="sprouty">Sprouty</option>
+		    <option class="dog" id="carrot-topClick" value="carrot-top">Carrot-Top</option>
 	  </select>
 	</div>
 
@@ -117,16 +110,12 @@
 
 </section>
 	
-
-
 <!--SCHEDULING-->
 
 <section id="scheduling">
-
-<h1 class="mainTitles">SCHEDULING - WATERING SYSTEM</h1>
+	<h1 class="mainTitles">SCHEDULING - WATERING SYSTEM</h1>
 
 	<div class="row">
-
 		<div class="col-xs-12">
 			<div class="time">DAILY REPEAT<br><br>
 
@@ -154,28 +143,26 @@
 			</div>
 		</div>
 
+		<hr class="linestyle2">
 
-<hr class="linestyle2">
+		<div class="col-xs-12">
+			<div class="time">ONE-TIME WATERING<br><br>
 
-
-	<div class="col-xs-12">
-		<div class="time">ONE-TIME WATERING<br><br>
-
-			<div>
-	 			 <p class="timer">8:20<span class="am">PM</span><br></p>
-	  				<label class="sliderDiv">
-	   					<input type="checkbox">
-	   					<span class="slider"></span>
-	 				</label>
-			</div>
-			<div>
-				<hr class="linestyle">
-				<p class="add">+</p>
+				<div>
+		 			 <p class="timer">8:20<span class="am">PM</span><br></p>
+		  				<label class="sliderDiv">
+		   					<input type="checkbox">
+		   					<span class="slider"></span>
+		 				</label>
+				</div>
+				<div>
+					<hr class="linestyle">
+					<p class="add">+</p>
+				</div>
 			</div>
 		</div>
 	</div>
-
-	</section>
+</section>
 
 <script src="js/main.js"></script>
 </body>

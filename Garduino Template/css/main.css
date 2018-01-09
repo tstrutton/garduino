@@ -1,3 +1,164 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Global */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'open_sanslight', sans-serif;
+}
+
+body p{
+	text-align: center;
+	font-size: 15px;
+	font-family: 'open_sanslight', sans-serif;
+	margin-bottom: 0px;
+}
+
+h1 {
+	font-family: 'open_sanslight', sans-serif;
+	font-size: 20px;
+	margin-left: 50px;
+	margin-top: 80px;
+	padding-top: 40px;
+	margin-bottom: 0;
+}
+
+
+h2 {
+	font-family: 'open_sanslight', sans-serif;
+	font-size: 15px;
+	display: inline-block;
+	padding-left: 35px;
+	margin-top: 0px;
+}
+
+footer 
+{
+	font-family: 'open_sanslight', sans-serif;
+	text-align: center;
+	font-size: 14px;
+	position:fixed;
+    bottom:0;
+    left:50%;
+    margin-left:-200px; /*negative half the width */
+    width:400px;
+    margin-bottom: 30px;
+}
+
+a 
+{
+    font-family: 'open_sanslight', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+option {
+	font-family: 'source_sans_proregular', sans-serif;
+}
+
+.hidden {
+	display: none;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+	bottom: 0px;
+}
+
+.smaller {
+	width: 375px;
+	margin: 0 auto;
+}
+
+.mainTitles {
+	font-family: 'open_sanslight', sans-serif;
+	font-size: 22px;
+	margin-left: 5%;
+	margin-top: 0;
+	padding-top: 40px;
+	margin-bottom: 0;
+	clear: both;
+}
+
+/* Logo */
+
+#logo 
+{ 
+  float: left;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 300px;
+}
+
+#logomain
+{ 
+  float: left;
+  display: block;
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+/* Login */
+
+#signin 
+{
+	padding-top: 240px;
+	font-family: 'open_sanslight', sans-serif;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.loginInput
+{
+	background-color: transparent;
+	border:none;
+	border-bottom:1px solid #707070;
+	height: 60px;
+	width:30%;
+	min-width: 325px;
+}
+
+.loginSubmit
+{
+	border:none;
+	font-family: 'source_sans_proregular', sans-serif;
+	font-size: 20px;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+	background-color: #000000;
+	width: 230px;
+	background:rgba(0,0,0,0.4);
+	border-radius: 30px;
+	cursor: pointer;
+	opacity: 0.7;
+	height: 35px;
+}
+
+/* Your Plants Section */
+
 .splash 
 {
 	color: #FFFFFF;
@@ -13,101 +174,6 @@
 	background-color: #CCCCCC;
 }
 
-#content 
-{
-	position: absolute;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	height:100%;
-}
-
-.row {
-	margin-left: 0px;
-	margin-right: 0px;
-	bottom: 0px;
-}
-
-body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Open Sans', sans-serif;
-}
-
-body p{
-	text-align: center;
-	font-size: 15px;
-	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 0px;
-}
-
-.plant{
-	color: #000000;
-	bottom: 0;
-	padding-top: 10px;
-}
-
-
-
-.plantClick {
-	border: 5px solid #078250;
-	padding-top: 0px;
-}
-
-.addplant {
-	padding-top: 10px;
-	margin-bottom: 15px;
-}
-
-.planthealthgood{
-	color: #00A2B6;
-	position: relative;
-	bottom: 13px;
-}
-
-.planthealthbad{
-	color: #AA1A32;
-	position: relative;
-	bottom: -4px;
-}
-
-.add {
-	font-size: 40px;
-	margin-top: 0px;
-	cursor: pointer;
-}
-
-.currentplant {
-	display: inline-block;
-	margin-left: 5%;
-	font-size: 18px;
-}
-
-.plants {
-	background:rgba(112,112,112,0.25);
-	margin-bottom: 10px;
-	box-sizing: border-box;
-	width: 170px;
-	height: 170px;
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	transition: border .25s ease;
-}
-
-p.plant {
-	margin-top: 0;
-}
-
-p.addplant {
-	margin-top: 0;
-}
-
-.smaller {
-	width: 375px;
-	margin: 0 auto;
-}
-
 #yourplants {
 	background-color: #634CA2;
 	margin-bottom: 10px;
@@ -119,8 +185,117 @@ p.addplant {
 	background-color: #FFFFFF;
 	background-image: url("../images/mainbg.png");
 	background-size: 100% 100%;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'open_sanslight', sans-serif;
 
+}
+
+#alert {
+	display: none;
+	width: 200px;
+	background:rgba(112,112,112,0.25);
+	margin: 0 auto;
+}
+
+#alertText {
+	width:95%;
+	height: 95%;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+#new {
+	margin-top: 5vh;
+}
+
+.plants {
+	background:rgba(112,112,112,0.25);
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	width: 170px;
+	height: 170px;
+	text-align: center;
+	font-family: 'open_sanslight', sans-serif;
+	transition: border .25s ease;
+}
+
+.plantClick {
+	border: 5px solid #078250;
+	padding-top: 0px;
+}
+
+.plant{
+	color: #000000;
+	bottom: 0;
+	padding-top: 10px;
+}
+
+.plantFix {
+	color: #000000;
+	bottom: 0;
+	padding-top: 10px;
+}
+
+.planthealthgood{
+	color: #00A2B6;
+	position: relative;
+	bottom: 13px;
+}
+
+#imgFix {
+	margin: 10px auto 20px auto;
+}
+
+.planthealthbad{
+	color: #AA1A32;
+	position: relative;
+	bottom: -4px;
+}
+
+.addplant {
+	padding-top: 10px;
+	margin-bottom: 15px;
+}
+
+p.plant {
+	margin-top: 0;
+}
+
+/* Diagnostics Section */
+
+#diagnostics {
+	background-color: #FFFFFF;
+	height:100%;
+	font-family: 'open_sanslight', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#content 
+{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	height:100%;
+}
+
+.currentplant {
+	display: inline-block;
+	margin-left: 5%;
+	font-size: 18px;
+}
+
+.menuoptions {
+    border: 1px solid #00A2B6;
+    color: #00A2B6;
+    width: 100px;
+    border-radius: 1px;
+    overflow: hidden;
+    margin-left: 3%;
+    display: inline-block;
+    position: relative;
+    top: 10px;
 }
 
 .graph {
@@ -128,7 +303,7 @@ p.addplant {
 	height: 150px;
 	margin-left: 1px;
 	margin-right: 1px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'open_sanslight', sans-serif;
 	opacity: 0.6;
 	margin: 0;
 	padding: 0;
@@ -138,12 +313,28 @@ p.addplant {
 	margin-top: 20px;
 }
 
-#diagnostics {
-	background-color: #FFFFFF;
-	height:100%;
-	font-family: 'Open Sans', sans-serif;
-	margin: 0;
-	padding: 0;
+/* Watering System Section */
+
+.add {
+	font-size: 40px;
+	margin-top: 0px;
+	cursor: pointer;
+}
+
+#scheduling {
+	background-color: #00A2B6;
+	font-family: 'open_sanslight', sans-serif;
+	color: #ffffff;
+}
+
+.time {
+	margin-bottom: 10px;
+	font-family: 'open_sanslight', sans-serif;
+	margin-top: 0;
+	color: #ffffff;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 22px;
 }
 
 .timer {
@@ -159,31 +350,70 @@ p.addplant {
 	font-size: 24px;
 }
 
-.mainTitles {
-	font-family: 'Open Sans Light', sans-serif;
-	font-size: 22px;
-	margin-left: 5%;
+.linestyle {
+	color: #FFFFFF;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.linestyle2 {
+	color: #FFFFFF;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+
+/* Add New Plants */
+
+.ADDplants {
+	background:rgba(112,112,112,0.25);
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	width: 170px;
+	height: 170px;
+	text-align: center;
+	font-family: 'open_sanslight', sans-serif;
+	transition: border .25s ease;
+}
+
+.formADD {
+	position: relative;
+	background-color: rgba(112, 112, 112, 0.25);
+	top: 10px;
+	width: 160px;
+	height: 30px;
+	margin: 0 auto;
+	border: none;
+	display: block;
+	border-bottom: 3px solid #00A2B6;
+}
+
+.optionADD {
+    border: 1px solid #00A2B6;
+    color: #00A2B6;
+    width: 100px;
+    border-radius: 1px;
+    overflow: hidden;
+    margin-left: 3%;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+.optionADD select{
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    font-size: 18px;
+    color: #00A2B6;
+    text-transform: uppercase;
+}
+
+p.addplant {
 	margin-top: 0;
-	padding-top: 40px;
-	margin-bottom: 0;
-	clear: both;
-}
-
-h1 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
-	margin-left: 50px;
-	margin-top: 80px;
-	padding-top: 40px;
-	margin-bottom: 0;
-}
-
-h2 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
-	display: inline-block;
-	padding-left: 35px;
-	margin-top: 0px;
 }
 
 .numSet, #amSet {
@@ -212,74 +442,8 @@ h2 {
 	margin: 0 auto;
 }
 
-.time {
-	margin-bottom: 10px;
-	font-family: 'Open Sans', sans-serif;
-	margin-top: 0;
-	color: #ffffff;
-	margin-left: 5%;
-	margin-right: 5%;
-	font-size: 22px;
-}
-
 .date {
 	font-size: 18px;
-}
-
-#scheduling {
-	background-color: #00A2B6;
-	/*height: 800px;*/
-	font-family: 'Open Sans', sans-serif;
-/*	padding-top: 20px;*/
-	color: #ffffff;
-}
-
-#logo 
-{ 
-  float: left;
-  display: inline-block;
-  margin-left: 30px;
-  margin-top: 30px;
-  width: 300px;
-}
-
-#logomain
-{ 
-  float: left;
-  display: block;
-  margin-left: 30px;
-  margin-top: 30px;
-  width: 300px;
-  margin-bottom: 20px;
-}
-
-#signin 
-{
-	padding-top: 240px;
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	margin-top: 50px;
-}
-
-footer 
-{
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	font-size: 14px;
-	position:fixed;
-    bottom:0;
-    left:50%;
-    margin-left:-200px; /*negative half the width */
-    width:400px;
-    margin-bottom: 30px;
-}
-
-a 
-{
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    font-size: 14px;
-    color: #FFFFFF;
 }
 
 .col2 
@@ -289,71 +453,44 @@ a
 	right: 0;	
 }
 
-input 
-{
-	background-color: transparent;
-	border:none;
-	border-bottom:1px solid #707070;
-	height: 60px;
-	width:30%;
-	min-width: 325px;
-}
-
 input[placeholder] /*can also use ::placeholder*/ 
 {
 	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'source_sans_proregular', sans-serif;
 	font-size: 25px;
-	color: white;
 	margin-bottom: 22px;
 }
 
 input::-webkit-input-placeholder {
-color: white;
+color: rgba(255,255,255,0.25);
 }
  
 input:-moz-placeholder { /* Firefox 18- */
-color: white;  
+color: rgba(255,255,255,0.25);  
 }
  
 input::-moz-placeholder {  /* Firefox 19+ */
-color: white;  
+color: rgba(255,255,255,0.25);  
 }
  
 input:-ms-input-placeholder {  
-color: white;  
+color: rgba(255,255,255,0.25); 
 }
 
-input[type='submit'] 
-{
-	border:none;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 20px;
-	color: #FFFFFF;
-	margin-bottom: 10px;
-	background-color: #000000;
-	width: 230px;
-	background:rgba(0,0,0,0.4);
-	border-radius: 30px;
-	cursor: pointer;
-	opacity: 0.7;
-	height: 35px;
+.submitADD {
+	position: relative;
+	top: 35px;
+	height: 30px;
+	width: 80%;
+	margin: 0 auto;
+	color: #078250;
+	background-color: #00A2B6;
+	border: none;
+	display: block;
 }
 
-option {
-	font-family: 'Source Sans Pro', sans-serif;
-}
-
-.menuoptions {
-    border: 1px solid #00A2B6;
-    color: #00A2B6;
-    width: 200px;
-    border-radius: 1px;
-    overflow: hidden;
-    margin-left: 3%;
-    display: inline-block;
-    position: relative;
-    top: 10px;
+#new {
+	margin-top: 5vh;
 }
 
 .menuoptions select {
@@ -367,19 +504,7 @@ option {
     text-transform: uppercase;
 }
 
-.linestyle {
-	color: #FFFFFF;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.linestyle2 {
-	color: #FFFFFF;
-	width: 100%;
-	margin: 0 auto;
-	margin-top: 70px;
-	margin-bottom: 30px;
-}
+/* Slider */
 
 .sliderDiv 
 {
@@ -464,7 +589,8 @@ input:checked + .slider:before
 	}
 
 	#yourplants {
-		height: 100vh;
+		height: 100%;
+		padding-bottom: 275px;
 	}
 
 	.row {
@@ -482,7 +608,15 @@ input:checked + .slider:before
 	.currentplant {
 		font-size: 27px;
 	}
+	
+	.menuoptions {
+		width: 250px;
+	}
 
+	.time {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
 }
 
 /*DESKTOP*/
